@@ -205,7 +205,7 @@ int main() {
             default:
                 system("clear");
                 cout << "===========================================\n";
-                cout << "Pilihan Anda Salah. Pilih Menu Yang Sesuai.\n";
+                cout << "Pilihan Anda Salah, Pilih Menu Yang Sesuai.\n";
                 cout << "===========================================\n";
         }
     } while(pilihan != 5);
