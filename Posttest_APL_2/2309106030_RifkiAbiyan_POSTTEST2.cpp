@@ -4,6 +4,8 @@
 #include <chrono>
 using namespace std;
 
+// SYSTEM CLEAR DALAM CODE JIKA TIDAK MENGGUNAKAN LINUX MOHON DI GANTI KE SYSTEM CLS, SAYA MENGGUNAKAN LINUX //
+
 void jeda(int detik) {
     this_thread::sleep_for(chrono::seconds(detik));
 }
