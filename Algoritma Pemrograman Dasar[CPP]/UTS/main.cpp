@@ -10,5 +10,5 @@ void jeda(int detik) {
 }
 
 int main() {
-
+    int ayam = 0;
 }
