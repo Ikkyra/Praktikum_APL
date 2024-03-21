@@ -10,5 +10,10 @@ void jeda(int detik) {
 }
 
 int main() {
-    int ayam = 0;
+    int pilihan = 0;
+    cout << "==========================\n";
+    cout << "[1] Detail Kartu Kredit\n";
+    cout << "[2] Sort Dari Besar ke Kecil\n";
+    cout << "[3] Sort Nama Pengguna\n";
+    cout << "==========================\n";
 }
