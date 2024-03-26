@@ -162,9 +162,9 @@ int main() {
     if(!status){
         system("clear");
         // system("cls");
-        cout << "==================================\n";
+        cout << "=================================\n";
         cout << "Anda Melebihi 3 Kali Percobaan!\n";
-        cout << "==================================\n";
+        cout << "=================================\n";
         return 0;
     }
     else{
