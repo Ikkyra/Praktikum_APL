@@ -39,7 +39,7 @@ void jumlah_saldo(int saldo) {
     cout << "===========================\n";
     cout << "Jumlah Saldo Anda Saat Ini: " << saldo << endl;
     cout << "===========================\n";
-    jeda(8);
+    jeda(2);
 }
 
 void setor_uang(int &saldo, int jumlah_uang) {
@@ -47,7 +47,7 @@ void setor_uang(int &saldo, int jumlah_uang) {
     cout << "===========================\n";
     cout << "Setor Uang Berhasil. Saldo Anda Sekarang: " << saldo << endl;
     cout << "===========================\n";
-    jeda(8);
+    jeda(2);
 }
 
 void penarikan_uang(int &saldo, int jumlah_uang) {
@@ -56,12 +56,12 @@ void penarikan_uang(int &saldo, int jumlah_uang) {
         cout << "=============================================\n";
         cout << "Penarikan Uang Berhasil. Saldo Anda Sekarang: " << saldo << endl;
         cout << "=============================================\n";
-        jeda(8);
+        jeda(2);
     } else {
         cout << "===========================\n";
         cout << "Saldo Anda Tidak Mencukupi.\n";
         cout << "===========================\n";
-        jeda(8);
+        jeda(2);
     }
 }
 
@@ -79,14 +79,14 @@ void transfer_uang(int &saldo, info_transfer transfer[], int &jumlah_transfer, i
             cout << "=========================================\n";
             cout << "Transfer Berhasil. Saldo Anda Sekarang: " << saldo << endl;
             cout << "=========================================\n";
-            jeda(8);
+            jeda(2);
         } else {
             cout << "Tujuan Transfer Tidak Ada\n";
-            jeda(8);
+            jeda(2);
         }
     } else {
         cout << "Saldo Anda tidak mencukupi untuk transfer ini.\n";
-        jeda(8);
+        jeda(2);
     }
 }
 
@@ -100,6 +100,7 @@ bool login() {
 
     while (percobaan > 0) {
         system("clear");
+        // system("cls");
         cout << "Masukkan Username Anda: ";
         getline(cin, input_username);
 
@@ -163,7 +164,7 @@ int main() {
         cout << "===============================\n";
         cout << "Login Berhasil, Selamat Datang.\n";
         cout << "===============================\n";
-        jeda(8);
+        jeda(2);
     }
     int pilihan, jumlah_uang, tujuan, jumlah;
     int saldoku = 0;
@@ -172,6 +173,7 @@ int main() {
 
     do {
         system("clear");
+        // system("cls");
         cout << "\nMESIN ATM\n";
         cout << "====================\n";
         cout << "[1] Setor Tunai\n";
@@ -187,6 +189,7 @@ int main() {
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Pilihan Harus Berupa Angka. Silakan Dicoba Lagi: ";
             system("clear");
+            // system("cls");
         }
         switch (pilihan) {
             case 1:
@@ -223,18 +226,20 @@ int main() {
                         break;
                     } else {
                         cout << "Tujuan Transfer Tidak Ada\n";
-                        jeda(8);
+                        jeda(2);
                     }
                 }
                 break;
             case 5:
                 system("clear");
+                // system("cls");
                 cout << "==================================\n";
                 cout << "Terima Kasih Telah Menggunakan ATM\n";
                 cout << "==================================\n";
                 break;
             default:
                 system("clear");
+                // system("cls");
                 cout << "===========================================\n";
                 cout << "Pilihan Anda Salah, Pilih Menu Yang Sesuai.\n";
                 cout << "===========================================\n";
